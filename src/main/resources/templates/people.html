@@ -1,0 +1,24 @@
+<h4>Personen</h4>
+<hr>
+<body>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="person : ${people}">
+                <td th:text="${person.id}"></td>
+                <td th:text="${person.firstName}"></td>
+                <td th:text="${person.lastName}"></td>
+                <td th:text="${person.age}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="/addperson">Add Person</a> 
+</body>
+</html>
